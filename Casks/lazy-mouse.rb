@@ -16,7 +16,9 @@ cask "lazy-mouse" do
   # The binary is built for Apple silicon only; an Intel Mac would install it and then fail to
   # launch. macOS 14 is the deployment target of the Swift package.
   depends_on arch: :arm64
-  depends_on macos: ">= :sonoma"
+  # A bare symbol, not ">= :sonoma": Homebrew deprecated the comparison form and reads the
+  # symbol as the minimum version.
+  depends_on macos: :sonoma
 
   app "Lazy Mouse.app"
 

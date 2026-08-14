@@ -1,6 +1,6 @@
 cask "lazy-mouse" do
-  version "1.0"
-  sha256 "06306eadbaa2a2c73fbd133289d3096b37296e6a52794fc42935a38ae58e3469"
+  version "1.1"
+  sha256 "e31a3d8d60e0df1a2c57c6e9c44971cf20e086ab662d5f8f10ead6e2759f4420"
 
   url "https://github.com/RRY/lazy-mouse/releases/download/v#{version}/LazyMouse-#{version}.dmg",
       verified: "github.com/RRY/lazy-mouse/"
@@ -13,11 +13,9 @@ cask "lazy-mouse" do
     strategy :github_latest
   end
 
-  # The binary is built for Apple silicon only; an Intel Mac would install it and then fail to
-  # launch. macOS 14 is the deployment target of the Swift package.
-  depends_on arch: :arm64
-  # A bare symbol, not ">= :sonoma": Homebrew deprecated the comparison form and reads the
-  # symbol as the minimum version.
+  # No arch constraint since 1.1: the binary is universal. macOS 14 is the deployment target
+  # of the Swift package. A bare symbol, not ">= :sonoma" — Homebrew deprecated the comparison
+  # form and reads the symbol as the minimum version.
   depends_on macos: :sonoma
 
   app "Lazy Mouse.app"

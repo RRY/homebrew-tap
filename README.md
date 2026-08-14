@@ -23,4 +23,4 @@ brew trust --cask rry/tap/lazy-mouse
 |---|---|
 | [`lazy-mouse`](Casks/lazy-mouse.rb) | HID++ configurator for the Logitech MX Master 3S — [source](https://github.com/RRY/lazy-mouse) |
 
-Apple silicon and macOS 14 or newer. The app is signed with a Developer ID and notarized.
+Universal binary (Apple silicon and Intel), macOS 14 or newer. The app is signed with a Developer ID and notarized.

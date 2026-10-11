@@ -1,6 +1,6 @@
 cask "lazy-mouse" do
-  version "1.2"
-  sha256 "2b7b3f3836217cf17ef5ce1f44d7c926fe990fb37f1ca77c1aac292df567c689"
+  version "1.2.1"
+  sha256 "9636b4a6f0fedf1f5b17a9128db65a16ba41c7bcdafcf067b195c85a0b89732f"
 
   url "https://github.com/RRY/lazy-mouse/releases/download/v#{version}/LazyMouse-#{version}.dmg"
   name "Lazy Mouse"

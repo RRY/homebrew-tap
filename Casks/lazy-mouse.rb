@@ -2,8 +2,7 @@ cask "lazy-mouse" do
   version "1.2"
   sha256 "2b7b3f3836217cf17ef5ce1f44d7c926fe990fb37f1ca77c1aac292df567c689"
 
-  url "https://github.com/RRY/lazy-mouse/releases/download/v#{version}/LazyMouse-#{version}.dmg",
-      verified: "github.com/RRY/lazy-mouse/"
+  url "https://github.com/RRY/lazy-mouse/releases/download/v#{version}/LazyMouse-#{version}.dmg"
   name "Lazy Mouse"
   desc "HID++ configurator for the Logitech MX Master 3S"
   homepage "https://github.com/RRY/lazy-mouse"
